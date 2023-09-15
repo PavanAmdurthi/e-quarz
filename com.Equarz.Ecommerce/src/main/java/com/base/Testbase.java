@@ -15,7 +15,7 @@ public class Testbase {
 
 	FileInputStream file;
 	public static Properties props;
-	public static WebDriver driver;
+	protected WebDriver driver;
 
 	public Testbase() {
 		
@@ -55,8 +55,8 @@ public class Testbase {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));
 		driver.get(props.getProperty("url"));
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-		driver.manage().deleteAllCookies();
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+		//driver.manage().deleteAllCookies();
 		
 		
 	}
