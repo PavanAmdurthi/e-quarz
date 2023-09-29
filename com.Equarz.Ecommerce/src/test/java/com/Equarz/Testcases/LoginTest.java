@@ -33,7 +33,7 @@ public class LoginTest extends Testbase {
 	@Test
 	public void verifyurl() throws InterruptedException
 	{
-		lg.validateLogin();
+		lg.validateLogin(null, null);
 		String url=driver.getCurrentUrl();
 		Assert.assertEquals("http://e-quarz.com/", url);
 	}

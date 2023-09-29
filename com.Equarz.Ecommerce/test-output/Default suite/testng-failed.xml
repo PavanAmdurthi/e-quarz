@@ -3,15 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Equarz.Testcases.Producttest">
+      <class name="com.Equarz.Testcases.WishlistTest">
         <methods>
-          <include name="bannerproduct"/>
-          <include name="dealofproduct"/>
-          <include name="prdinitialze"/>
-          <include name="verifyproduct"/>
-          <include name="seaproduct"/>
+          <include name="dealswishlist"/>
+          <include name="homehwishlist"/>
+          <include name="searchwishlist"/>
+          <include name="categorywishlist"/>
+          <include name="bannerhwishlist"/>
+          <include name="teardown"/>
+          <include name="initialize"/>
         </methods>
-      </class> <!-- com.Equarz.Testcases.Producttest -->
+      </class> <!-- com.Equarz.Testcases.WishlistTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
