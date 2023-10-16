@@ -1,5 +1,5 @@
 package com.Equarz.Testcases;
 
-public class SignupFunctionality {
+public class AddtoAddrestestcses {
 
 }
