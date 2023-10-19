@@ -19,7 +19,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.base.Testbase;
 
 public class EditProfile_Functionality extends Testbase {
-	@FindBy(xpath="//small[text()='Hello, Keerthi']")
+	@FindBy(xpath="//small[text()='Hello, pavan']")
 	WebElement dashboard;
 	@FindBy(xpath="//a[text()=' My profile']")
 	WebElement profile;
@@ -63,14 +63,14 @@ public class EditProfile_Functionality extends Testbase {
 		rb.keyPress(KeyEvent.VK_ENTER);
 		rb.keyRelease(KeyEvent.VK_ENTER);
 		fname.clear();
-		fname.sendKeys("Keerthi");
+		fname.sendKeys("pavan");
 		lname.clear();
-		lname.sendKeys("Bojanapu");
+		lname.sendKeys("amdurthi");
 		phone.sendKeys("3");
 		pass.clear();
-		pass.sendKeys("Keerthi@123");
+		pass.sendKeys("pavan@01");
 		cpass.clear();
-		cpass.sendKeys("Keerthi@123");
+		cpass.sendKeys("pavan@01");
 		update.click();
 		String print=successful.getText();
 		System.out.println(print);
