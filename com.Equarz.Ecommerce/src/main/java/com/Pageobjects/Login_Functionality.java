@@ -24,7 +24,7 @@ public class Login_Functionality extends Testbase {
 		{
 			PageFactory.initElements(driver, this);
 		}
-		public Homepage validateLogin(String property, String property2) throws InterruptedException
+		public Homepage validateLogin() throws InterruptedException
 		{
 			user.sendKeys(props.getProperty("username"));
 			pass.sendKeys(props.getProperty("password"));
